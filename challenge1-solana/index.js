@@ -8,6 +8,7 @@ const {
 } = require("@solana/web3.js");
 // Create a new keypair
 const newPair = new Keypair();
+console.log(newPair);
 // Exact the public and private key from the keypair
 const publicKey = new PublicKey(newPair._keypair.publicKey).toString();
 const privateKey = newPair._keypair.secretKey;
